@@ -1,0 +1,8 @@
+<b>Album</b>
+
+<p><%= @album.name %></p>
+<a href="/albums/<%= @album.id %>/edit">Edit</a>
+
+<form action='/albums/<%= @album.id %>/delete' method='post'>
+  <input type="submit" value="delete">
+</form>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Music App</title>
+  <link rel="icon" href="/Notify.png">
+  <link rel="stylesheet" type="text/css" href="/style_sheet.css">
+</head>
+<body>
+
+  <div id='header_main'></div>
+  <div id="sub_header_main"></div>
+  <div id="sub_header_right"></div>
+  <div id="sub_header_right_shadow"></div>
+  <div id="sub_header_left"></div>
+  <div id="sub_header_left_shadow"></div>
+
+  <div id='buttons>'>
+  <button id='home_button' onclick="location.href='/'">
+       Home</button>
+  <button id='artists_button' onclick="location.href='/artists'">Artists</button>
+  <button id='album_button' onclick="location.href='/albums'">Albums</button>
+  </div>
+
+  <%= yield %>
+
+</body>
+</html>

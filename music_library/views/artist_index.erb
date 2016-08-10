@@ -1,0 +1,17 @@
+<h1 id='artist_header'>Artists</h1>
+
+<h2 id='artist_table_heading'>Name</h2>
+
+<div id='new_artist'><a href="/artists/new">Add Artist</a></div>
+
+<div id='artist_show'>
+<% @artists.each do |artist|%>
+
+<p><%= artist.name %></p>
+
+
+<a href="/artists/<%= artist.id %>">View</a>
+<hr align="left" width="40%">
+<% end %>
+
+</div>

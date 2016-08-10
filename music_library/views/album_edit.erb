@@ -1,0 +1,19 @@
+<h1>Enter an Album</h1>
+
+<form action="/albums/<%= @album.id %>" method="post">
+
+<label for="name">Album: </label>
+<input type="text" name="name" value="<%= @album.name %>">
+
+<label for="artist_id">Please choose an Artist</label>
+
+<select name="artist_id">
+    <% @artists.each do |artist| %>
+    <option value="<%= artist.id %>" <%= 'selected' if@album.artist_id == artist.id %>><%= artist.name %></option>
+    <% end %>
+
+    <input type="submit" value="Add an Album">
+
+</select>
+
+</form>

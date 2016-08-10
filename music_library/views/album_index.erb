@@ -1,0 +1,25 @@
+<h1 id="albums_header">Albums</h1>
+
+<h2 id="album_table_heading">Album</h2>
+<h2 id="album_artist_table_heading">Artist</h2>
+<div id='new_album'><a href="/albums/new">Add Album</a></div>
+
+<div id="album_show">
+
+<% @albums.each do |album|%>
+
+<span><%= album.name %></span> 
+<span id="artist_for_album"><%= album.artist.name %></span>
+
+<p><a href="/albums/<%= album.id %>">View</a>
+<% end  %></p>
+
+<hr align="left" width="40%">
+
+</div> 
+
+
+
+
+
+
